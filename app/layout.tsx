@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono , Telex , Slabo_13px} from "next/font/google";
 import "./globals.css";
+ 
+const slabo = Slabo_13px({
+  variable: "--font-slabo",
+  subsets: ["latin"],
+  weight: "400"
+})
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +17,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const telex = Telex({
+  variable: "--font-telex",
+  subsets: ["latin"],
+  weight: "400"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${telex.variable} ${slabo.variable} antialiased`}
       >
         {children}
       </body>
