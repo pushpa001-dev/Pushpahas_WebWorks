@@ -5,8 +5,9 @@ import gsap from "gsap";
 import Image from "next/image";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useSmoothScroll } from "./ScrollContext";
 gsap.registerPlugin(ScrollTrigger);
-const Hero = () => {
+const Hero  = () => {
   useGSAP(() => {
     const textsplit = SplitText.create("#text h1", { type: "lines" });
     const t = gsap.timeline({
@@ -17,7 +18,7 @@ const Hero = () => {
         scrub: true,
       },
     });
-    t.to("#text", {
+    t.to("#text h1 , #text p", {
       y: 50,
     });
 
@@ -31,21 +32,21 @@ const Hero = () => {
     gsap.from("#text p", { opacity: 0, duration: 0.5, delay: 1 });
 
     t.to("#hero", {
-      y: -500,
+      bottom: 0,
     });
     t.to("#fan , #scroll", {
       display: "none",
     });
   });
-
+  const lenis = useSmoothScroll();
   return (
     <section
       id="main"
-      className=" w-full h-screen flex items-center justify-center flex-col overflow-hidden"
+      className=" w-full h-screen flex items-center justify-center flex-col overflow-hidden relative"
     >
       <div
         id="hero"
-        className="h-full w-full absolute bg-[url(/hero2.jpg)] bg-cover bg-center blur-[5px]  "
+        className="h-full w-full absolute bg-[url(/hero2.jpg)] bg-cover bg-center blur-[5px] scale-120 bottom-[-5] "
       />
       <div
         id="text"
@@ -68,9 +69,17 @@ const Hero = () => {
             className="opacity-5 animate-spin"
           />
         </div>
-        <div id="scroll" className="w-full flex items-center justify-center">
-          <button className="bg-white/60 w-40 h-10 rounded-full flex items-center justify-center font-telex md:font-bold gap-5 p-2 animate-bounce delay-100">
+        <div id="scroll_down" className="w-full flex items-center justify-center">
+          <button onClick={() => {
+            
+            const target = document.querySelector("#about") as HTMLElement;
+            if (lenis && target) {
+              lenis.scrollTo(target);
+            }
+          }} className="transition-all duration-75">
+          <h2 className="bg-white/60 w-40 h-10 rounded-full flex items-center justify-center font-telex md:font-bold gap-5 p-2 animate-bounce delay-100">
             scroll down
+          </h2>
           </button>
         </div>
       </div>

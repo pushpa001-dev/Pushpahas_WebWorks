@@ -1,19 +1,20 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import Feature from "@/components/Feature";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import Whatido from "@/components/Whatido";
 
 export default function Home() {
   return (
-    <>
+    <div className="w-full h-full">    
     <Hero />
     <About />
     <Whatido />
-    <Feature />
+    <Projects/>
     <Contact />
     <Footer/>
-    </>
+    </div>
+
   );
 }
