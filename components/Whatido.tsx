@@ -139,14 +139,14 @@ const Whatido = () => {
     })
   });
   return (
-    <section className=" flex flex-col items-center justinfy-center w-full h-full px-10 lg:px-20 gap-10 lg:gap-30">
+    <section className=" flex flex-col items-center justinfy-center w-full h-full px-10 lg:px-20 gap-10 md:gap-30">
       <div id="what">
         <h1 className="text-2xl sm:text-5xl font-bold font-stretch-100% font-slabo text-white px-5 py-2 sm:px-5 sm:py-5 bg-background text-center rounded-lg ">
           {" "}
           What I Do{" "}
         </h1>
       </div>
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-15 2xl:gap-20">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-15  2xl:gap-20">
         <Tec
           image="/animation.svg"
           name="Interactive Animations"
