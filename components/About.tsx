@@ -11,7 +11,7 @@ interface TecProps {
 }
 const Tec = ({ name }: TecProps) => {
   return (
-    <div className="w-full h-full flex items-center justify-center text-zinc-700 bg-white hover:bg-zinc-900 hover:text-zinc-50 transition-colors duration-450  py-1 lg:py-3 lg: px-4 rounded-lg shadow-md">
+    <div className="w-full h-full flex items-center justify-center text-zinc-700 bg-white hover:bg-zinc-900 hover:text-zinc-50 transition-colors duration-450  py-1 lg:py-3 lg: px-4 rounded-lg shadow-md lg:shadow-2xl ">
       <h2 className="text-lg md:text-2xl  font-bold   font-telex">{name}</h2>
     </div>
   );
@@ -78,7 +78,7 @@ const About = () => {
       id="about"
       className="w-full h-full flex flex-col xl:flex-row items-center justify-between px-5 lg:px-20  bg-white my-5  sm:py-10 lg:py-20 relative scroll-"
     >
-      <div className="flex w-full h-full flex-col items-center justify-between gap-10 bg-gradient-to-b from-background to-zinc-900 py-10 sm:py-10 px-5 lg:px-10 rounded-tl-[50px] rounded-tr-md rounded-bl-md  my-10 rounded-br-3xl shadow-xl">
+      <div className="flex w-full h-full flex-col items-center justify-between gap-10 bg-gradient-to-b from-background to-zinc-900 py-10 sm:py-10 px-5 lg:px-10 rounded-tl-3xl lg:rounded-tl-[50px] rounded-tr-md rounded-bl-md  my-10 rounded-br-3xl shadow-xl">
         <div
           id="head"
           className="flex flex-col items-center lg:items-start justify-center w-full"
@@ -139,10 +139,9 @@ const About = () => {
           className="w-200 object-cover "
         />
       </div>
-    
-        <div className="bg-blue-400 w-10 lg:w-50 h-50 rounded-full opacity-10 blur-xl absolute top-0.5 right-0 lg:-right-10"/>
-        <div className="bg-blue-400 w-10 lg:w-50 h-50 rounded-full opacity-10 blur-xl  absolute bottom-0.5 left-0 lg:-left-10"/>
-     
+
+      <div className="bg-blue-400 w-10 lg:w-50 h-50 rounded-full opacity-10 blur-xl absolute top-0.5 right-0 lg:-right-10" />
+      <div className="bg-blue-400 w-10 lg:w-50 h-50 rounded-full opacity-10 blur-xl  absolute bottom-0.5 left-0 lg:-left-10" />
     </section>
   );
 };
