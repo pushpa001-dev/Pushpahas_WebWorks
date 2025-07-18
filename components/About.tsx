@@ -17,7 +17,16 @@ const Tec = ({ name }: TecProps) => {
   );
 };
 const About = () => {
+
   useGSAP(() => {
+    const t = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    })
     gsap.from("#head ", {
       scrollTrigger: "#head",
       x: -100,
@@ -71,6 +80,13 @@ const About = () => {
       },
       { y: 5, duration: 2, repeat: -1, yoyo: true }
     );
+    t.to("#head-about ", {
+      y: 100,
+      duration: 2,
+      ease: "linear",
+      delay: 0.1,
+    })
+   
   });
 
   return (
@@ -78,7 +94,7 @@ const About = () => {
       id="about"
       className="w-full h-full flex flex-col xl:flex-row items-center justify-between px-5 lg:px-20  bg-white my-5  sm:py-10 lg:py-20 relative overflow-hidden"
     >
-      <div className="flex w-full h-full flex-col items-center justify-between gap-10 bg-gradient-to-b from-background to-zinc-900 py-10 sm:py-10 px-5 lg:px-10 rounded-tl-3xl lg:rounded-tl-[50px] rounded-tr-md rounded-bl-md  my-10 rounded-br-3xl shadow-xl">
+      <div id="head-about" className="flex w-full h-full flex-col items-center justify-between gap-10 bg-gradient-to-b from-background to-zinc-900 py-10 sm:py-10 px-5 lg:px-10 rounded-tl-3xl lg:rounded-tl-[50px] rounded-tr-md rounded-bl-md  my-10 rounded-br-3xl shadow-xl">
         <div
           id="head"
           className="flex flex-col items-center lg:items-start justify-center w-full"

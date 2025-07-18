@@ -54,12 +54,6 @@ const Hero = () => {
       repeat: -1,
       ease: "none",
     });
-    t.to("#marquee-text", {
-      xPercent: -50,
-      duration: 5,
-      repeat: -1,
-      ease: "none",
-    })
 
   }, []);
 
