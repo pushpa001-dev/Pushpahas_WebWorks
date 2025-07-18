@@ -34,9 +34,20 @@ export const CONTACT_MEDIA = [
         title: "Instagram" , link:"https://www.instagram.com/k.pushpahas?igsh=M291dzlmY3libWk2" 
     },
     {
-        title: "Email" , link:"pushpahas77@gmail.com" 
+        title: "Email" , link:"mailto:pushpahas77@gmail.com" 
   },
     {
         title: "Facebook" , link:"https://www.facebook.com/share/1FiTYkgfqg/" 
     }
+]
+export const QUICK_LINKS = [
+    {
+        title: "About" , link:"about"
+    },
+    {
+        title: "service" , link:"service"
+    },
+    {
+        title: "Contact" , link:"contact"
+    },
 ]

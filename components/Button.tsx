@@ -5,13 +5,14 @@ interface ButtonProps {
     link: string;
     style?: string;
     image?: string;
-    style2?: string
+    text?: string;
+    scale?: string
 }
 
-const Button = ({title, link , style}: ButtonProps) => {
+const Button = ({title, link , style,text,scale='102' }: ButtonProps) => {
     return (
 
-        <div className={`flex bg-black text-white items-center justify-center px-4 py-3 rounded-${style} hover:scale-102 transition-all duration-150 ease-in-out opacity-70`}>
+        <div className={`flex bg-black text-white items-center justify-center px-4 py-3 rounded-${style}  hover:scale-${scale} ${text}  transition-all duration-150 ease-in-out opacity-70`}>
             <Link href={link} target='_blank'>
             {title}
             </Link>

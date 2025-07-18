@@ -76,7 +76,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full h-full flex flex-col xl:flex-row items-center justify-between px-5 lg:px-20  bg-white my-5  sm:py-10 lg:py-20 relative scroll-"
+      className="w-full h-full flex flex-col xl:flex-row items-center justify-between px-5 lg:px-20  bg-white my-5  sm:py-10 lg:py-20 relative overflow-hidden"
     >
       <div className="flex w-full h-full flex-col items-center justify-between gap-10 bg-gradient-to-b from-background to-zinc-900 py-10 sm:py-10 px-5 lg:px-10 rounded-tl-3xl lg:rounded-tl-[50px] rounded-tr-md rounded-bl-md  my-10 rounded-br-3xl shadow-xl">
         <div

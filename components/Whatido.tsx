@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
+import {useSmoothScroll} from "./ScrollContext";
 gsap.registerPlugin(ScrollTrigger);
 interface WhatidoProps {
   image: string;
@@ -40,6 +40,7 @@ const Tec = ({
             alt={name}
             width={50}
             height={50}
+            priority
             className=" object-cover rounded-t-md lg:rounded-t-2xl  "
           />
         </div>
@@ -87,7 +88,7 @@ const Whatido = () => {
       ease: "power4.out",
     });
     gsap.from("#cards", {
-      scrollTrigger: "cards tec",
+      scrollTrigger: "cards ",
       opacity: 0,
       duration: 0.5,
       ease: "power2.in",
@@ -138,8 +139,9 @@ const Whatido = () => {
       stagger: 0.1,
     })
   });
+  const lenis = useSmoothScroll();
   return (
-    <section className=" flex flex-col items-center justinfy-center w-full h-full px-10 lg:px-20 gap-10 md:gap-30">
+    <section id="service" className=" flex flex-col items-center justinfy-center w-full h-full px-10 lg:px-20 gap-10 md:gap-30">
       <div id="what">
         <h1 className="text-2xl sm:text-5xl font-bold font-stretch-100% font-slabo text-white px-5 py-2 sm:px-5 sm:py-5 bg-background text-center rounded-lg ">
           {" "}
@@ -179,11 +181,19 @@ const Whatido = () => {
         <p className="text-center text-2xl">
           Ready to elevate your web presence?
         </p>
-        <Link href="/contact">
-          <p className="text-center lg:text-xl text-background underline">
-            Let&apos;s discuss your project →
+        <button
+            onClick={() => {
+            const target = document.querySelector("#contact") as HTMLElement;
+             if (lenis && target) {
+               lenis.scrollTo(target);
+               
+             } 
+            }}
+            className="transition-all duration-75">
+          <p className="text-center lg:text-xl text-background underline group w-full">
+            Let&apos;s discuss your project <span className="group-hover:translate-x-10">→</span> 
           </p>
-        </Link>
+          </button>
       </div>
     </section>
   );
