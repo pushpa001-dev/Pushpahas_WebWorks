@@ -31,7 +31,7 @@ const Tec = ({
   return (
     <div
       id="cards"
-      className={`flex flex-col items-center justify-center w-full h-full rounded-md lg:rounded-2xl shadow-md lg:shadow-xl bg-${style} px-10 lg:px-20 pb-5 lg:pb-10 gap-10`}
+      className={`flex flex-col items-center justify-center w-full h-full rounded-md lg:rounded-2xl shadow-md lg:shadow-xl bg-${style} px-5 2xl:px-20 pb-5 lg:pb-10 gap-5 lg:gap-10`}
     >
       <div className="flex flex-col items-center justify-center w-full h-full bg-white">
         <div id="image" className="border-2   px-20 rounded-md py-1">
@@ -47,13 +47,13 @@ const Tec = ({
       </div>
       <h1
         id="name"
-        className="font-bold text-2xl sm:text-3xl font-telex text-background md:text-start w-full "
+        className="font-bold text-2xl sm:text-3xl font-telex text-background md:text-start text-center w-full "
       >
         {name}
       </h1>
       <p
         id="discription"
-        className="font-sans text-lg md:text-2xl text-background"
+        className="font-sans text-lg md:text-xl 2xl:text-2xl text-background text-center md:text-start"
       >
         {discription}
       </p>

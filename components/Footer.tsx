@@ -5,8 +5,8 @@ import { QUICK_LINKS } from './context';
 const Footer = () => {
   const lenis = useSmoothScroll();
   return (
-    <section className='w-full h-full flex flex-col items-center justify-center gap-5 py-5 lg:py-10 px-5 lg:px-30 bg-black'>
-       <hr className='w-full h-0.5 bg-zinc-600 '/>
+    <section className='w-full h-full flex flex-col items-center justify-center border-t border-zinc-500 gap-5 py-5 lg:py-10 px-5 lg:px-30 bg-black'>
+       
        <div className=' flex-row items-center justify-between hidden lg:flex w-full'>
         <h1 className='text-sm md:text-2xl font-telex text-zinc-300'>
           Pushpahas WebWorks <br />

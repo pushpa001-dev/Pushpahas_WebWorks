@@ -82,7 +82,7 @@ const Hero = () => {
         </div>
         <div
           id="marquee "
-          className=" hidden lg:flex absolute bottom-[30%] lg:bottom-[25%] w-full overflow-hidden whitespace-nowrap"
+          className=" hidden xl:flex absolute bottom-[30%] lg:bottom-[25%] w-full overflow-hidden whitespace-nowrap"
         >
           <div
             className="flex gap-10 text-white font-bold text-5xl lg:text-9xl opacity-50 animate-marquee"

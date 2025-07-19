@@ -3,7 +3,6 @@ import { Geist, Geist_Mono , Telex , Slabo_13px} from "next/font/google";
 import "./globals.css";
 import ScrollContext from "@/components/ScrollContext";
 import Cursor from "@/components/Cursor";
- 
 const slabo = Slabo_13px({
   variable: "--font-slabo",
   subsets: ["latin"],
@@ -43,8 +42,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${telex.variable} ${slabo.variable} antialiased scroll-smooth`}
       >
          <ScrollContext>
+         
         <Cursor />
         {children}
+        
         </ScrollContext>
       </body>
     </html>

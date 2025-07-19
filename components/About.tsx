@@ -80,13 +80,26 @@ const About = () => {
       },
       { y: 5, duration: 2, repeat: -1, yoyo: true }
     );
-    t.to("#head-about ", {
-      y: 100,
-      duration: 2,
-      ease: "linear",
-      delay: 0.1,
-    })
    
+    const mm = gsap.matchMedia();
+    mm.add("(min-width: 724px)", () => {
+      t.to("#head-about ", {
+        y: 100,
+        duration: 2,
+        ease: "linear",
+        delay: 0.1,
+        
+      })
+    })
+    mm.add("(max-width: 430px)", () => {
+      t.to("#head-about ", {
+       y: 0,
+        duration: 2,
+        ease: "linear",
+        delay: 0.1,
+        
+      })
+    })
   });
 
   return (

@@ -12,7 +12,9 @@ const Cursor = () => {
       gsap.to(cursor, {
         x: e.clientX-10,
         y: e.clientY-10,
-        duration: 0.1,
+        duration: 1,
+       
+        ease: "back.out",
         
       });
     };
@@ -35,7 +37,7 @@ const Cursor = () => {
   return (
     <div
       id="custom-cursor"
-      className=" hidden lg:flex w-11 h-11 bg-zinc-500 fixed  top-[-20] opacity-60 left-[-15] z-[9999] pointer-events-none rounded-full mix-blend-difference"
+      className=" hidden 2xl:flex w-12 h-12 bg-zinc-400 fixed  top-[-20] opacity-70 left-[-15] z-[9999] pointer-events-none rounded-full mix-blend-difference"
     />
   );
 };

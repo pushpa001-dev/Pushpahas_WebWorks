@@ -38,8 +38,8 @@ const Project = ({ heading, discription, image , link}: ProjectProps) => {
          </div>
       </div>
       <Link href={link} target='_blank'>
-      <div className='w-full h-full px-5 sm:px-10 py-2 lg:px-15 lg:py-10 flex flex-col items-start justify-center bg-gray-100 '> 
-        <h1 className='font-bold text-sm md:text-2xl font-telex'>{heading}</h1>
+      <div className='w-full h-full px-2 gap-1 sm:px-10 py-2 lg:px-15 lg:py-10 flex flex-col items-start justify-center bg-gray-100 '> 
+        <h1 className=' text-[12px] md:text-2xl font-telex'>{heading}</h1>
         <p className=' text-[10px] md:text-lg text-zinc-400 font-sans'>{discription}</p>
       </div>
       </Link>
