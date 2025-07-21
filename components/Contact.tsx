@@ -17,26 +17,26 @@ const Contact = () => {
       duration: 1,
       stagger: 0.1,
       ease: "power4.out",
-      delay: 0.5,
+      delay: 0.1,
     })
     const split2 = SplitText.create("#cap", { type: "lines" });
     gsap.from(split2.lines, {
       scrollTrigger: "#cap",
-      y:100,
+      y:50,
       opacity: 0,
       duration: 1,
       stagger: 0.1,
       ease: "power4.out",
-      delay: 0.5,
+      delay: 0.1,
     })
     gsap.from("#media", {
       scrollTrigger: "#media",
-      y:100,
+      y:50,
       opacity: 0,
       duration: 1,
       stagger: 0.1,
       ease: "power4.out",
-      delay: 0.5,
+      delay: 0.1,
     })
     
   })

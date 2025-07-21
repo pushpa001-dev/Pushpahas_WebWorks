@@ -21,6 +21,7 @@ const Hero = () => {
     t.to("#text h1 , #text p", {
       y: 50,
       duration: 2,
+      delay: 0.4,
     });
 
     gsap.from(textsplit.lines, {
@@ -28,13 +29,22 @@ const Hero = () => {
       duration: 1,
       stagger: 0.1,
       ease: "power4.out",
+      delay: 0.4,
     });
-    gsap.from("#hero", {
+    gsap.fromTo("#hero", {
       scale: 4,
       y:200,
       duration: 1.5,
       ease: "power4.out",
       scrub: 0.5,
+      delay: 0.3
+    }, {
+      scale: 1.1,
+      y:0,
+      duration: 1.5,
+      ease: "power4.out",
+      delay: 0.3,
+      scrub: 0.4,
     });
     gsap.fromTo(
       "#hero",

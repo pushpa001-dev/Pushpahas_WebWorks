@@ -19,14 +19,7 @@ const Tec = ({ name }: TecProps) => {
 const About = () => {
 
   useGSAP(() => {
-    const t = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#about",
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-      },
-    })
+    
     gsap.from("#head ", {
       scrollTrigger: "#head",
       x: -100,
@@ -48,10 +41,10 @@ const About = () => {
       scrollTrigger: "#ul ",
       y: 50,
       opacity: 0,
-      duration: 0.5,
+      duration: 0.3,
       ease: "power4.out",
       delay: 0.1,
-      stagger: 0.2,
+      stagger: 0.1,
     });
     gsap.from("#tec h1", {
       scrollTrigger: "#tec",
@@ -79,27 +72,7 @@ const About = () => {
       },
       { y: 5, duration: 2, repeat: -1, yoyo: true }
     );
-   
-    const mm = gsap.matchMedia();
-    mm.add("(min-width: 724px)", () => {
-      t.to("#head-about ", {
-        y: 50,
-        duration: 0.1,
-        ease: "linear",
-        delay: 0.1,
-        
-      })
-    })
-    mm.add("(max-width: 430px)", () => {
-      t.to("#head-about ", {
-       y: 0,
-
-        ease: "linear",
-        delay: 0.1,
-        
-      })
-    })
-  });
+  },[]);
 
   return (
     <section

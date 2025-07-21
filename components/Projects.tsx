@@ -60,12 +60,12 @@ const Projects = () => {
     })
     gsap.from("#projects", {
       scrollTrigger: "#projects",
-      y: 200,
+      y: 50,
       opacity: 0,
       duration: 1,
       stagger: 0.1,
       ease: "power4.out",
-      delay: 0.2,
+      delay: 0.1,
     })
   })
   return (
