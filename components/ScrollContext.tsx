@@ -1,5 +1,11 @@
 "use client";
-import { useEffect, useState, createContext, useContext, ReactNode } from "react";
+import {
+  useEffect,
+  useState,
+  createContext,
+  useContext,
+  ReactNode,
+} from "react";
 import Lenis from "lenis";
 
 // 1. Define the context type

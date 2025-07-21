@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useSmoothScroll } from "./ScrollContext";
+import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
   useGSAP(() => {
@@ -19,18 +20,19 @@ const Hero = () => {
     });
     t.to("#text h1 , #text p", {
       y: 50,
-      duration: 1,
+      duration: 2,
     });
 
     gsap.from(textsplit.lines, {
       y: 100,
-      duration: 0.8,
+      duration: 1,
       stagger: 0.1,
       ease: "power4.out",
     });
     gsap.from("#hero", {
-      scale: 3,
-      duration: 1,
+      scale: 4,
+      y:200,
+      duration: 1.5,
       ease: "power4.out",
       scrub: 0.5,
     });
@@ -66,8 +68,16 @@ const Hero = () => {
     >
       <div
         id="hero"
-        className="h-full w-full absolute bg-[url(/hero2.jpg)] bg-cover bg-center blur-[5px] scale-120 bottom-[-5] "
-      />
+        className="h-full w-full absolute  blur-[5px] scale-120 bottom-[-5] "
+      >
+        <Image
+          src="/hero.jpg"
+          alt="hero"
+         fill
+          priority
+          className=" object-cover"
+        />
+      </div>
       <div
         id="text"
         className=" relative w-full h-screen items-center justify-between flex flex-col bg-zinc-700/20 py-30 sm:py-50 lg:py-5 xl:py-20 px-20 "
