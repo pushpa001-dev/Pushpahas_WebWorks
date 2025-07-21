@@ -12,7 +12,7 @@ const Cursor = () => {
       gsap.to(cursor, {
         x: e.clientX-10,
         y: e.clientY-10,
-        duration: 1,
+        duration: 0.6,
        
         ease: "back.out",
         

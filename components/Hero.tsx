@@ -52,8 +52,9 @@ const Hero = () => {
 
     gsap.to("#marquee-text", {
       xPercent: -50,
-      duration: 10,
+      duration: 15,
       repeat: -1,
+      scrub: true,
       ease: "none",
     });
 

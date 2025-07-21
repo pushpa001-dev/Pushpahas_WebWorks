@@ -66,8 +66,7 @@ const About = () => {
       opacity: 0,
       duration: 0.5,
       ease: "power2.in",
-      delay: 0.1,
-      stagger: 0.2,
+      stagger: 0.1,
     });
     gsap.fromTo(
       "#img",
@@ -84,8 +83,8 @@ const About = () => {
     const mm = gsap.matchMedia();
     mm.add("(min-width: 724px)", () => {
       t.to("#head-about ", {
-        y: 100,
-        duration: 2,
+        y: 50,
+        duration: 0.1,
         ease: "linear",
         delay: 0.1,
         
@@ -94,7 +93,7 @@ const About = () => {
     mm.add("(max-width: 430px)", () => {
       t.to("#head-about ", {
        y: 0,
-        duration: 2,
+
         ease: "linear",
         delay: 0.1,
         
