@@ -59,7 +59,7 @@ const Tec = ({
       </p>
       <ul
         id="list"
-        className="list-disc text-start w-full font-bold text-sm lg:text-lg bg-background text-white p-5 px-7 lg:px-10 rounded-2xl"
+        className="list-disc text-start w-full font-bold text-sm lg:text-lg bg-neutral-700 text-white p-5 px-7 lg:px-10 rounded-2xl"
       >
         <li>{first}</li>
         <li>{second}</li>
@@ -143,7 +143,7 @@ const Whatido = () => {
   return (
     <section id="service" className=" flex flex-col items-center justinfy-center w-full h-full px-10 lg:px-20 gap-10 md:gap-30">
       <div id="what">
-        <h1 className="text-2xl sm:text-5xl font-bold font-stretch-100% font-slabo text-white px-5 py-2 sm:px-5 sm:py-5 bg-background text-center rounded-lg ">
+        <h1 className="text-2xl sm:text-5xl font-bold font-stretch-100% font-slabo text-white px-5 py-2 sm:px-5 sm:py-5 bg-neutral-700 text-center rounded-lg ">
           {" "}
           What I Do{" "}
         </h1>

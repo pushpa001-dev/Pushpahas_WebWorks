@@ -77,7 +77,7 @@ const Projects = () => {
         </h1>
         <p className=' text-lg md:text-2xl text-background font-sans text-center'>A showcase of my latest work in creating engaging, high-performance web experiences.</p>
         </div>
-        <div  className='w-full h-full grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 items-center justify-center  gap-5 sm:bg-background md:px-15 lg:px-20 py-10 rounded-xl md:rounded-2xl '>
+        <div  className='w-full h-full grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 items-center justify-center  gap-5 sm:bg-neutral-700 md:px-15 lg:px-20 py-10 rounded-xl md:rounded-2xl '>
           {PROJECTS.map((project, index) => (
             <Project
               key={index}

@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --font-telex: var(--font-telex);
   --font-slabo: var(--font-slabo);
+  --font-anton: var(--font-anton);
 }
 
 @media (prefers-color-scheme: feSpotLight) {
