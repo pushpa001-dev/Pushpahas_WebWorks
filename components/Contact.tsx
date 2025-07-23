@@ -55,13 +55,13 @@ const Contact = () => {
             CONTACT_MEDIA.map((contact) => (
               
                 // eslint-disable-next-line react/jsx-key
-                <div id='media'>
+                <div id='media' className='cursor-hover'>
                 <Button
                 title={contact.title}
                 link={contact.link}
                 style='md'
                 text='md:text-2xl ' 
-                scale='105'
+                scale='102'
                 />
                 </div>
             ))

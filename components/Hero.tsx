@@ -33,24 +33,9 @@ const Hero = () => {
       delay: 1,
       scrub: true,
     });
-    gsap.fromTo("#hero", {
-      scale: 4,
-      duration: 1.5,
-      ease: "power4.out",
-      scrub: 0.5,
-      delay: 0.3
-    }, {
-      scale: 1.1,
-      y:0,
-      duration: 1.5,
-      ease: "power4.out",
-      delay: 0.3,
-      scrub: 0.4,
-    });
-   
     gsap.from("#text p", { opacity: 0, duration: 0.5, delay:1.8 });
 
-    t.to("#fan , #scroll", {
+    t.to(" #scroll", {
       display: "none",
     });
 
@@ -75,21 +60,17 @@ const Hero = () => {
   return (
     <section
       id="main"
-      className=" w-full h-screen flex items-center justify-center flex-col overflow-hidden relative "
+      className=" w-full h-screen flex items-center justify-center flex-col overflow-hidden relative"
     >
       <div
-        id="hero"
-        className="h-full w-full absolute  blur-[5px] scale-120 bottom-[-5] bg-zinc-700/40 "
-      >
-      </div>
-      <div
         id="text"
-        className=" relative w-full h-screen items-center justify-between sm:justify-center gap-40  flex flex-col bg-white py-30 sm:py-50 lg:py-5 xl:py-20 px-20 "
+        className=" relative w-full h-screen items-center justify-between gap-5  flex flex-col bg-white py-30 sm:py-50 lg:py-5 xl:py-5 px-20 "
       >
-        <div className="flex flex-col items-center justify-center gap-5 2xl:gap-0  z-1">
-          <h1 className="text-6xl sm:text-9xl  xl:text-[200px] 2xl:text-[290px] font-bold  font-slabo leading-20 sm:leading-40 xl:leading-60 2xl:leading-80 text-start  text-neutral-700  text-shadow-2xs  flex flex-col hi">
+        <div className="flex flex-col items-center justify-center 2xl:gap-0  z-1">
+          <h1 className=" text-[clamp(2rem,15vw,15rem)] px-4 w-full h-full font-bold font-slabo text-start  text-neutral-700  text-shadow-2xs  flex flex-col hi">
             Pushpahas <br /> WebWorks
           </h1>
+         
           <p className="text-lg lg:text-2xl  font-telex  text-center text-neutral-700">
             Crafting interactive experiences, responsive landing pages
           </p>
@@ -98,15 +79,6 @@ const Hero = () => {
           id="marquee "
           className=" hidden xl:flex absolute bottom-[20%] lg:bottom-[20%] w-full overflow-hidden whitespace-nowrap"
         >
-          {/* <div
-            className="flex gap-10 text-neutral-800 font-bold text-5xl lg:text-9xl opacity-50 animate-marquee"
-            id="marquee-text"
-          >
-            <span>A FRONT END DEVELOPER</span>
-            <span>A FRONT END DEVELOPER</span>
-            <span>A FRONT END DEVELOPER</span>
-            <span>A FRONT END DEVELOPER</span>
-          </div> */}
         </div>
         <div
           id="scroll_down"
@@ -127,8 +99,8 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div id="dot-1" className="absolute hidden top-[30%] 2xl:top-[10%] left-0 sm:flex items-center justify-center w-35 h-35 2xl:w-70 2xl:h-70  bg-neutral-600/50 blur-[3px] rounded-[50%] "/>
-      <div id="dot-2" className="absolute hidden bottom-[30%] 2xl:bottom-[10%] right-0 sm:flex items-center justify-center w-35 h-35 2xl:w-70 2xl:h-70 bg-neutral-600/50 blur-[3px] rounded-[50%] "/>
+      <div id="dot-1" className="absolute hidden top-[30%] 2xl:top-[10%] left-0 sm:flex items-center justify-center w-40 h-40 2xl:w-80 2xl:h-80  bg-neutral-600/50 blur-[3px] rounded-[50%] "/>
+      <div id="dot-2" className="absolute hidden bottom-[30%] 2xl:bottom-[10%] right-0 sm:flex items-center justify-center w-40 h-40 2xl:w-80 2xl:h-80 bg-neutral-600/50 blur-[3px] rounded-[50%] "/>
       <div/>
     </section>
   );
