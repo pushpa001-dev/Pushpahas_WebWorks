@@ -64,10 +64,10 @@ const Hero = () => {
     >
       <div
         id="text"
-        className=" relative w-full h-screen items-center justify-between gap-5  flex flex-col bg-white py-30 sm:py-50 lg:py-5 xl:py-5 px-20 "
+        className=" relative w-screen h-screen items-center justify-between gap-5  flex flex-col bg-white py-30 sm:py-50 lg:py-5 xl:py-5 px-20 "
       >
         <div className="flex flex-col items-center justify-center 2xl:gap-0  z-1">
-          <h1 className=" text-[clamp(2rem,15vw,15rem)] px-4 w-full h-full font-bold font-slabo text-start  text-neutral-700  text-shadow-2xs  flex flex-col hi">
+          <h1 className=" text-[clamp(2rem,12vw,15rem)] px-4 w-full h-full font-bold font-slabo text-start  text-neutral-700  text-shadow-2xs  flex flex-col hi">
             Pushpahas <br /> WebWorks
           </h1>
          
