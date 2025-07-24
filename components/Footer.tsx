@@ -9,7 +9,7 @@ const Footer = () => {
        
        <div className=' flex-row items-center justify-between hidden lg:flex w-full'>
         <h1 className='text-sm md:text-2xl font-telex text-zinc-300'>
-          Pushpahas WebWorks <br />
+          TPA-Infera <br />
           crafting the future <br />
           Experence
         </h1>
@@ -29,7 +29,7 @@ const Footer = () => {
        </div>
        <div className='flex flex-row items-center justify-between w-full'>
         <h1 className='text-sm md:text-2xl font-telex text-zinc-300'>
-          @2025 Pushpahas 
+          @2025 TPA-Infera
         </h1>
         <p className='text-sm md:text-2xl text-zinc-300'>Made with ❤️</p> 
        </div>
