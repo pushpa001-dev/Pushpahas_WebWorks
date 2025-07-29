@@ -31,7 +31,7 @@ export const CONTACT_MEDIA = [
         title: "Twitter" , link:"https://twitter.com/pushpa001_dev" 
     },
     {
-        title: "Instagram" , link:"https://www.instagram.com/k.pushpahas?igsh=M291dzlmY3libWk2" 
+        title: "Instagram" , link:"https://www.instagram.com/atomic_049?igsh=ZzdjejVkcmIwbGk2" 
     },
     {
         title: "Email" , link:"mailto:pushpahas77@gmail.com" 
