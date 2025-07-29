@@ -145,7 +145,7 @@ const Whatido = () => {
       <div id="what">
         <h1 className="text-2xl sm:text-5xl font-bold font-stretch-100% font-slabo text-white px-5 py-2 sm:px-5 sm:py-5 bg-neutral-700 text-center rounded-lg ">
           {" "}
-          What I Do{" "}
+          Service&apos;s{" "}
         </h1>
       </div>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-15  2xl:gap-20">
