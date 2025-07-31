@@ -66,7 +66,7 @@ const About = () => {
       {
         scrollTrigger: {
           trigger: "#img",
-          toggleActions: "play pause resume pause",
+          toggleActions: "resume pause resume pause",
         },
         y: -5,
       },
